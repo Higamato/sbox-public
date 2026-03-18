@@ -51,15 +51,14 @@ public sealed class MethodDescription : MemberDescription
 
 	private void InitMethod( MethodInfo x )
 	{
-		base.Init( x );
-
 		IsStatic = x.IsStatic;
 		IsPublic = x.IsPublic;
 		IsFamily = x.IsFamily;
 		IsVirtual = x.IsVirtual;
 		IsSpecialName = x.IsSpecialName;
+		parameters = x.GetParameters();
 
-		parameters = methodInfo.GetParameters();
+		base.Init( x );
 	}
 
 	internal override void Dispose()
