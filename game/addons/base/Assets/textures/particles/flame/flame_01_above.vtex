@@ -3,7 +3,7 @@
   "Sequences": [
     {
       "Source": "textures/particles/flame/flame_01_above_color.png",
-      "IsLooping": false,
+      "IsLooping": true,
       "FlipBook": true,
       "Columns": 8,
       "Rows": 8,
