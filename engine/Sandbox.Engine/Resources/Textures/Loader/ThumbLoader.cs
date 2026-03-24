@@ -56,7 +56,7 @@ internal static class ThumbLoader
 			if ( filename.StartsWith( "mount:" ) )
 			{
 				var t = MountUtility.GetPreviewTexture( filename );
-				if ( !t.IsValid ) return;
+				if ( !t.IsValid() ) return;
 
 				placeholder.CopyFrom( t );
 				return;
