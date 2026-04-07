@@ -309,6 +309,7 @@ file static class ProjectExtensions
 			project.PackageReferences.Add( "shadergraph" );
 			project.PackageReferences.Add( "moviemaker" );
 			project.PackageReferences.Add( "hammer" );
+			project.PackageReferences.Add( "dooeditor" );
 		}
 
 		/// <summary>
